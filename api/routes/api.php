@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+require __DIR__.'/auth.php';
+
 Route::post('/department/store', [DepartmentController::class, 'store'])
                 ->middleware('auth')
                 ->name('department.store');
